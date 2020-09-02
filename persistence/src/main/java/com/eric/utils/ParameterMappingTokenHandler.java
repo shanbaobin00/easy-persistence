@@ -8,6 +8,7 @@ public class ParameterMappingTokenHandler implements TokenHandler {
 
 	// context是参数名称 #{id} #{username}
 
+	@Override
 	public String handleToken(String content) {
 		parameterMappings.add(buildParameterMapping(content));
 		return "?";
